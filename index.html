@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Filterize App</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/milligram.css">
+	<link rel="stylesheet" href="css/cssgram.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="manifest" href="/manifest.json">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="column">
+				<h1>📷✨Filterize</h1>
+				<hr>
+				
+				<input type="file" onchange="previewFile(event)">
+
+				<figure class="result">
+					<img class="preview">
+				</figure>
+				<hr>
+				
+				<div class="filters" onclick="applyFilter(event)">
+					<button class="button-outline" id="toaster">Toaster</button>
+					<button class="button-outline" id="gingham">Gingham</button>
+					<button class="button-outline" id="nashville">Nashville</button>
+					<button class="button-outline" id="walden">Walden</button>
+					<button class="button-outline" id="moon">Moon</button>
+				</div>
+				<hr>
+
+				<button onclick="downloadImage()">Download Image</button>
+				<button class="button-outline" onclick="resetFilter()">Reset Filter</button>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/dom-to-image.js"></script>
+	<script src="js/script.js"></script>
+
+	<script>
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('sw.js').then(function() {
+				console.log('Service worker registered.')
+			})
+
+			navigator.serviceWorker.ready.then(function() {
+				console.log('Service worker ready.')
+			})
+		} else {
+			console.log('Service worker not supported.')
+		}
+	</script>
+</body>
+</html>

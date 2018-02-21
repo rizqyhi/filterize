@@ -1,0 +1,23 @@
+body {
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 780px;
+}
+
+.result {
+  max-width: 100%;
+  height: auto;
+  margin: 0
+}
+
+.result img {
+  display: block;
+  max-width: 100%;
+  height: auto
+}
+
+button {
+  border-width: 2px;
+}
