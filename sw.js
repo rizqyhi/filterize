@@ -1,6 +1,7 @@
 var CACHE_NAME = 'filterize-v1'
 var fileList = [
-  '/filterize',
+  './',
+  'index.html',
   'css/normalize.css',
   'css/milligram.css',
   'css/cssgram.css',
