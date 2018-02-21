@@ -1,12 +1,12 @@
 var CACHE_NAME = 'filterize-v1'
 var fileList = [
-  '/',
-  '/css/normalize.css',
-  '/css/milligram.css',
-  '/css/cssgram.css',
-  '/css/style.css',
-  '/js/dom-to-image.js',
-  '/js/script.js'
+  '/filterize',
+  'css/normalize.css',
+  'css/milligram.css',
+  'css/cssgram.css',
+  'css/style.css',
+  'js/dom-to-image.js',
+  'js/script.js'
 ]
 
 self.addEventListener('install', function(event) {
