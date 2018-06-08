@@ -1,6 +1,6 @@
 {
 	"name": "Filterize",
-	"start_url": "/",
+	"start_url": "/filterize/index.html",
 	"display": "standalone",
 	"icons": [
 		{
